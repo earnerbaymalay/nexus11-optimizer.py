@@ -42,7 +42,7 @@ Designed for **Windows 11 24H2**, it targets Bloatware, AI Tracking, and Latency
 
 1.  **Clone the Repo**
     ```bash
-    git clone [https://github.com/earnerbaymalay/Nexus11-Optimizer.git](https://github.com/earnerbaymalay/Nexus11-Optimizer.git)
+    git clone [https://github.com/earnerbaymalay/Nexus11-Optimizer.py](https://github.com/earnerbaymalay/Nexus11-Optimizer.py)
     cd Nexus11-Optimizer
     ```
 
@@ -73,3 +73,4 @@ Designed for **Windows 11 24H2**, it targets Bloatware, AI Tracking, and Latency
 <div align="center">
 Made with ❤️ for the Windows Community
 </div>
+
