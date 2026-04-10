@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="160" viewBox="0 0 720 160">
+  <defs>
+    <linearGradient id="nexusGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0078D6"/>
+      <stop offset="100%" stop-color="#6264A7"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="720" height="160" fill="#0d1117" rx="12"/>
+  <!-- Windows + lightning -->
+  <g transform="translate(100,80)" filter="url(#glow)">
+    <rect x="-25" y="-30" width="50" height="60" rx="3" fill="none" stroke="url(#nexusGrad)" stroke-width="2"/>
+    <text x="0" y="8" text-anchor="middle" font-size="28">⚡</text>
+    <!-- Win10 label -->
+    <text x="-40" y="-38" font-family="monospace" font-size="10" fill="#0078D6" font-weight="600">Win10</text>
+    <!-- Win11 label -->
+    <text x="15" y="-38" font-family="monospace" font-size="10" fill="#6264A7" font-weight="600">Win11</text>
+  </g>
+  <!-- Callouts -->
+  <text x="200" y="48" fill="#0078D6" font-family="monospace" font-size="12" font-weight="600">Part 1 — Windows 10 (1903-21H2)</text>
+  <text x="200" y="68" fill="#94a3b8" font-family="sans-serif" font-size="12">Cortana killer · News widget · OneDrive control</text>
+  <text x="200" y="98" fill="#6264A7" font-family="monospace" font-size="12" font-weight="600">Part 2 — Windows 11 (21H2-24H2)</text>
+  <text x="200" y="118" fill="#94a3b8" font-family="sans-serif" font-size="12">Copilot/Recall killer · Classic context menu</text>
+  <text x="500" y="48" fill="#3fb950" font-family="monospace" font-size="12" font-weight="600">Smart Launcher</text>
+  <text x="500" y="68" fill="#94a3b8" font-family="sans-serif" font-size="12">Auto-detects Windows version · Routes correctly</text>
+  <text x="500" y="98" fill="#f0883e" font-family="monospace" font-size="12" font-weight="600">Safe Operations</text>
+  <text x="500" y="118" fill="#94a3b8" font-family="sans-serif" font-size="12">System restore point before changes · Menu-driven</text>
+  <line x1="470" y1="30" x2="470" y2="135" stroke="#21262d" stroke-width="1"/>
+</svg>
