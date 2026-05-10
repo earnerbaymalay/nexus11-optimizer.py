@@ -1,99 +1,54 @@
-<div align="center">
+# ? Nexus Optimizer (v1.1)
 
-# ⚡ N E X U S - O P T I M I Z E R
-### *Dual-Edition Windows Optimization Suite.*
-
-[![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)]()
-[![Win10](https://img.shields.io/badge/Part_1-Windows_10-0078D6?style=for-the-badge&logo=windows)]()
-[![Win11](https://img.shields.io/badge/Part_2-Windows_11-6264A7?style=for-the-badge&logo=windows11)]()
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-
-**[📲 Download](https://github.com/earnerbaymalay/nexus11-optimizer.py/releases)** · **[🌐 Sideload Hub](https://earnerbaymalay.github.io/sideload/)**
-
-</div>
+A modular Windows optimization toolkit designed to debloat, harden privacy, and boost performance for Windows 10 and Windows 11. This tool combines Python's logic with PowerShell's system-level access to clean your OS.
 
 ---
 
-![Nexus Optimizer](docs/media/hero.svg)
+## ?? Setup Guide (For New Systems)
 
-## What is Nexus Optimizer?
+If you have a fresh Windows installation with nothing installed, follow these steps exactly:
 
-**Modular Windows optimization toolkit with two edition-specific optimizers.** Part 1 targets Windows 10 (Cortana, News widget, OneDrive control). Part 2 targets Windows 11 (Copilot, Recall, classic context menu). Smart launcher auto-detects your Windows version and routes correctly.
+### 1. Install Python
+*   **Download:** Go to [Python.org](https://www.python.org/downloads/) and download the latest Windows installer.
+*   **CRITICAL:** When installing, you **must** check the box that says **"Add Python to PATH"**. If you don't do this, the script won't run.
 
----
+### 2. Configure Windows Permissions
+Windows blocks scripts by default. To allow this tool to work:
+1. Right-click your **Start Menu** and select **Terminal (Admin)** or **PowerShell (Admin)**.
+2. Paste this command and hit Enter:
+   \Set-ExecutionPolicy RemoteSigned -Scope CurrentUser\
+3. Type \Y\ and hit Enter.
 
-## Quick Start
+### 3. Install Required Libraries
+Open your Command Prompt (cmd) and run this command:
+\\\ash
+pip install rich psutil
+\\\
 
-### Install
-
-```bash
-git clone https://github.com/earnerbaymalay/nexus11-optimizer.py.git
-cd nexus11-optimizer.py
-pip install -r requirements.txt
-```
-
-### Run
-
-```bash
-# Smart launcher (recommended) — auto-detects Windows version
-python launcher.py
-
-# Or run directly:
-cd part1_win10 && python main.py    # Windows 10
-cd part2_win11 && python main.py    # Windows 11
-```
-
-> ⚠️ **Must run as Administrator** (launcher auto-elevates).
+### 4. Download & Run
+1. Click the green **Code** button at the top of this GitHub page and select **Download ZIP**.
+2. Extract the ZIP file to a folder on your Desktop.
+3. Open the folder, right-click \launcher.py\ (or \main.py\), and select **Run with Python**.
 
 ---
 
-## Features
+## ??? Main Features
 
-| Feature | Win10 | Win11 |
-|---------|:-----:|:-----:|
-| Debloat (AppX removal) | ✅ | ✅ |
-| Privacy hardening | ✅ | ✅ |
-| Gaming performance | ✅ | ✅ (HAGS) |
-| Network boost | ✅ | ✅ |
-| Cortana / AI killer | ✅ (Cortana) | ✅ (Copilot + Recall) |
-| UI tweaks | Tray icons, tablet mode | Classic context menu, taskbar align |
-| Widget control | News & Interests | Widgets, Snap Layout |
-| System restore point | ✅ Before changes | ✅ Before changes |
+| Category | Description |
+| :--- | :--- |
+| **Privacy** | Disables Telemetry, Diagnostic Data, and Advertising IDs. |
+| **Debloat** | Removes pre-installed junk like Candy Crush and Bing Search. |
+| **Performance** | Optimizes power plans and disables unnecessary startup services. |
+| **Win 11 Special** | Disables "Recall," Copilot, and restores classic Right-Click menu. |
 
 ---
 
-## Requirements
-
-- **Python** 3.10+
-- **Windows** 10 (1903-21H2) or Windows 11 (21H2-24H2, including Copilot+ PCs)
-- **Administrator** privileges
-- **Dependencies:** `rich`, `psutil`
+## ?? Important Safety Info
+*   **Administrator Rights:** This tool requires Administrator privileges.
+*   **System Restore:** The script will attempt to create a System Restore point. **Do not skip this.**
+*   **Modules:** Use \part1_win10\ for Win10 and \part2_win11\ for Win11.
 
 ---
 
-## Related Projects
-
-<div align="center">
-
-| Project | Platform | Description | Link |
-|---------|----------|-------------|------|
-| 🌌 **Aether** | 📱 Android (Termux) | Local-first AI workstation | [Source →](https://github.com/earnerbaymalay/aether) |
-| 📲 **Sideload Hub** | 🌐 Web / PWA | Central app distribution | [Open Hub →](https://earnerbaymalay.github.io/sideload/) |
-
-</div>
-
----
-
-## Documentation
-
-- **[🔧 Troubleshooting](TROUBLESHOOTING.md)** — Permission errors, failed tweaks, rollback steps.
-
----
-
-<div align="center">
-
-Made with ❤️ for the Windows community
-
-[MIT License](LICENSE)
-
-</div>
+## ?? Disclaimer
+This tool makes significant changes to the Windows Registry. Use at your own risk. Always back up your important files before running optimization scripts.
